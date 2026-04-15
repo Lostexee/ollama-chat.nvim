@@ -44,7 +44,7 @@ A Neovim plugin for local LLM support directly inside your editor — chat, code
 
 ```lua
 {
-  "lostexee/ollama-chat.nvim",
+  "Lostexee/ollama-chat.nvim",
   dependencies = {
     -- Optional but recommended for Markdown rendering in the chat
     {
@@ -59,20 +59,6 @@ A Neovim plugin for local LLM support directly inside your editor — chat, code
     })
   end,
 }
-```
-
-### Minimal example (from `init.lua`)
-
-```lua
-require("lazy").setup({
-  {
-    "MeanderingProgrammer/render-markdown.nvim",
-    dependencies = { "nvim-treesitter/nvim-treesitter" },
-    opts = {},
-  },
-})
-
-require("ollama-chat").setup()
 ```
 
 ---
